@@ -1,16 +1,23 @@
 //check prime or not:
 
 let num=11;
-let factor=10;
+
+let factor=0;
 
 for (i=0;i<=num;i++){
+
 if (factor%i==0){
+
 factor++;
 }
 }
+
 if (factor==2){
+
 console.log(num,"is prime");
+
 }else{
+
 console.log(num,"is not prime");
 }
 
@@ -19,9 +26,21 @@ console.log(num,"is not prime");
 //check palindrome:
 
 
-str= "naman"
-let n= str.length
-for(i=0;i<=str.length-1;i++){
-if (str[0]==(n-1)&& str[1]==(n-2);
+function palindrome (str) {
+    let bag="";
+for (let a=str.length-1; a>=0; a--) {
+    bag+=str[a];
+
+} if (bag==str) {
+    return true; 
+} else {
+    return false; 
 }
-console.log(str,"is a palnidrome")
+}
+let x = palindrome("naman");
+
+ if (x==true) {
+  console.log("Palindrome"):
+} else {
+console.log("Not Palaindrome");
+}
